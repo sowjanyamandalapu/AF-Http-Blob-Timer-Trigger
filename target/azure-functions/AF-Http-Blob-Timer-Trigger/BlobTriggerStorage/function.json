@@ -1,0 +1,12 @@
+{
+  "scriptFile" : "../AF-Http-Blob-Timer-Trigger-1.0-SNAPSHOT.jar",
+  "entryPoint" : "com.function.BlobTriggerStorage.run",
+  "bindings" : [ {
+    "type" : "blobTrigger",
+    "direction" : "in",
+    "name" : "content",
+    "path" : "samples-workitems/{name}",
+    "dataType" : "binary",
+    "connection" : "AzureWebJobsStorage"
+  } ]
+}

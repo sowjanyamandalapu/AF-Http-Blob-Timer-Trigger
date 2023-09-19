@@ -1,0 +1,10 @@
+{
+  "scriptFile" : "../AF-Http-Blob-Timer-Trigger-1.0-SNAPSHOT.jar",
+  "entryPoint" : "com.function.TimerTriggerSample.run",
+  "bindings" : [ {
+    "type" : "timerTrigger",
+    "direction" : "in",
+    "name" : "TimerTriggerSample",
+    "schedule" : "0 */5 * * * *"
+  } ]
+}
